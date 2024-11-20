@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <h1>Editing Blog</h1>
+    <h1>Editar Blog</h1>
     <form action="{% url 'edit' article.id %}" method="post">
       {% csrf_token %}
       {{ form.as_p }}
@@ -16,8 +16,8 @@
 
     <br>
 
-    <a href="{% url 'detail' article.id %}">Detail</a> |
-    <a href="{% url 'index' %}">Back</a>
+    <a href="{% url 'detail' article.id %}">Detalle</a> |
+    <a href="{% url 'index' %}">Atras</a>
   </body>
 
 </html>
